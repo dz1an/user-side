@@ -1,0 +1,475 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 13%;
+  background: #fff;
+}
+.input-box {
+  position: relative;
+  height: 50px;
+  margin-left: 30px;
+  max-width: 690px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.input-box i,
+.input-box .button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.input-box i {
+  left: 20px;
+  font-size: 30px;
+  color: #707070;
+}
+.input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    padding: 0 155px 0 65px;
+    background-color: #EBEBEB;
+}
+.input-box .button {
+    right: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 0px;
+    background-color: #20AD5B;
+    cursor: pointer;
+}
+
+.input-box .button:active {
+  transform: translateY(-50%) scale(0.98);
+}
+
+@media screen and (max-width: 500px) {
+  .input-box {
+    height: 66px;
+    margin: 0 8px;
+  }
+  .input-box i {
+    left: 12px;
+    font-size: 25px;
+  }
+  .input-box input {
+    padding: 0 112px 0 50px;
+  }
+  .input-box .button {
+    right: 0px;
+    font-size: 15px;
+    padding: 22px 15px;
+}
+  }
+
+ */
+ * {
+  margin: 0;
+  padding: 0
+}
+
+html {
+  height: 100%
+}
+
+h2{
+  color: #2F8D46;
+}
+#form {
+  text-align: center;
+  position: relative;
+  margin-top: 20px
+}
+
+  #form fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    bottom: auto;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.finish {
+  text-align: center
+}
+
+#form fieldset:not(:first-of-type) {
+  display: none
+}
+
+#form .previous-step, .next-step {
+  width: 124px;
+  font-weight: 500;
+  color: white;
+  border: 0 none;
+  background-color: gray;
+  border-radius: 24px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px 10px 0px;
+  float: right;
+  font-size: smaller;
+
+}
+
+.form, .previous-step {
+background: #d6d4d4;
+}
+
+.form, .next-step {
+  background: #2F8D46;
+}
+
+#form .previous-step:hover,
+#form .previous-step:focus {
+  background-color: #616161
+}
+
+#form .next-step:hover,
+#form .next-step:focus {
+  background-color: #2F8D46
+}
+
+.text {
+  color: #2F8D46;
+  font-weight: normal
+}
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey
+}
+
+#progressbar .active {
+  color: #2F8D46
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 15px;
+  width: 25%;
+  float: left;
+  position: relative;
+  font-weight: 400
+}
+
+#progressbar #step1:before {
+  content: "1"
+}
+
+#progressbar #step2:before {
+  content: "2"
+}
+
+#progressbar #step3:before {
+  content: "3"
+}
+
+#progressbar #step4:before {
+  content: "4"
+}
+
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px
+}
+
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1
+}
+.card-body {
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+min-height: 1px;
+padding: 1.25rem;
+margin-left: -300px;
+margin-right: -270px;
+overflow-wrap: hidden;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: #2F8D46
+}
+
+.progress {
+  height: 20px
+}
+
+.progress-bar {
+  background-color: #2F8D46
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+
+     body{
+      background-color:#eee;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+     }
+
+     .height{
+      height: 100vh;
+      padding-bottom: 185px;
+     }
+     
+
+     .search{
+     position: relative;
+     box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+       
+     }
+
+     .search input{
+
+      height: 60px;
+      text-indent: 25px;
+      border: 2px solid #d6d4d4;
+
+
+     }
+
+
+     .search input:focus{
+
+      box-shadow: none;
+      border: 2px solid blue;
+
+
+     }
+
+     .search .fa-search{
+
+      position: absolute;
+      top: 20px;
+      left: 16px;
+
+     }
+
+     .search button{
+
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      height: 50px;
+      width: 110px;
+      background: blue;
+
+     }
+     .container {
+      background-color: #ffffff;
+      padding-bottom: 200px;
+    }
+      .container {
+        background-color: #ffffff;
+        padding-bottom: 100px;
+        margin-bottom: -150px;
+      }
+     
+     /* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+.input-box {
+position: relative;
+height: 50px;
+margin-left: 30px;
+max-width: 690px;
+width: 100%;
+background: #EBEBEB;
+margin-left: 116px;
+border-radius: 8px;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.input-box i,
+.input-box .button {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+}
+.input-box i {
+left: 20px;
+font-size: 30px;
+color: #707070;
+}
+.input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  padding: -4px 169px 0 65x;
+  background-color: #EBEBEB;
+  margin-left: -380px;
+}
+.input-box .button {
+  right: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  padding: 13px 25px;
+  border-radius: 0px;
+  background-color: #20AD5B;
+  cursor: pointer;
+}
+.uil-search:before{
+  margin-left: -377px;
+  content: '\e99a';
+}
+
+.input-box .button:active {
+transform: translateY(-50%) scale(0.98);
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+.input-box {
+  height: 66px;
+  margin: 0 8px;
+}
+.input-box i {
+  left: 12px;
+  font-size: 25px;
+}
+.uil-search:before{
+  margin-left: -392px;
+  content: '\e99a';
+  padding-bottom: 15px;
+  font-size: 21px;
+
+}
+.input-box input {
+  padding: 0 112px 0 50px;
+}
+.input-box .button {
+  right: 12px;
+  font-size: 14px;
+  padding: 8px 18px;
+}
+.col-md-8{
+  padding-right: 0%;
+}
+input.next-step{
+  margin-bottom: 100px;
+  margin-right: 55px;
+
+}
+.height {
+  height: 100vh;
+  padding-bottom: 500px
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: 55px;
+  margin-bottom: 350px;
+  border-radius: 6px;
+}
+  .container-fluid{
+
+    display: initial;
+  }
+
+}
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+background: #EBEBEB;
+}
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 991px) {
+
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow:auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+}
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: currentColor;
+    color: #000000;
+
+}
+
+
+@media screen and (max-width: 500px) {
+strong{
+  display: none;
+}
+}
+
+@media screen and (max-width: 500px) {
+  #next-step{
+
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 500px) {
+
+  #bilat{
+    display: flex;
+    overflow: auto;
+    width: 100%;
+
+
+}
+}
+}
+
